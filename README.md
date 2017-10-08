@@ -2,7 +2,7 @@
 
 Absolutely minimal, zero-dependency, [Node](https://nodejs.org/api/http.html) or [Micro](https://github.com/zeit/micro) router.
 
-It only allows you to map specific method-endpoint combinations to specific handlers.
+It allows you to map specific method-endpoint combinations to specific handlers.
 
 ## Getting Started
 
@@ -19,18 +19,18 @@ const router = require('micro-pico-router')
 const app = router()
 
 app.get('/', (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.statusCode = 200
   res.end('okay')
 })
 
 app.post('/submit', (req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' })
+  res.statusCode = 200
   res.end()
 })
 
 // If you not define a default handler it will return status 404 by default
 app.default((req, res) => {
-  res.writeHead(404, { 'Content-Type': 'text/plain' })
+  res.statusCode = 404
   res.end('Not Found')
 })
 
@@ -81,7 +81,7 @@ module.exports = app.get('/', async (req, res) => {
 
 ## HTTP Methods
 
-THe methods available on `app[METHOD]` are the ones listed by [`http.METHODS`](https://nodejs.org/api/http.html#http_http_methods), but lowercased.
+The methods available on `app[METHOD]` are the ones listed by [`http.METHODS`](https://nodejs.org/api/http.html#http_http_methods), but lowercased.
 
 You can also give them using the options:
 
