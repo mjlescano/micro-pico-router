@@ -1,0 +1,31 @@
+{
+  "name": "micro-pico-router",
+  "version": "1.0.0",
+  "description": "Node or Micro absolutely minimal router",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjlescano/micro-pico-router.git"
+  },
+  "keywords": [
+    "micro",
+    "node",
+    "http",
+    "router"
+  ],
+  "author": "mjlescano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjlescano/micro-pico-router/issues"
+  },
+  "homepage": "https://github.com/mjlescano/micro-pico-router#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "0.22.0",
+    "eslint": "4.8.0",
+    "eslint-config-democracyos": "2.0.1"
+  }
+}

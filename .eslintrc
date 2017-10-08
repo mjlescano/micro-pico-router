@@ -1,0 +1,7 @@
+{
+  "extends": ["democracyos", "democracyos/node"],
+
+  "rules": {
+    "node/no-unpublished-require": 0
+  }
+}
