@@ -1,6 +1,6 @@
 {
   "name": "micro-pico-router",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node or Micro absolutely minimal router",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,10 @@
     "url": "https://github.com/mjlescano/micro-pico-router/issues"
   },
   "homepage": "https://github.com/mjlescano/micro-pico-router#readme",
+  "engines": {
+    "node": "8",
+    "npm": "5"
+  },
   "dependencies": {},
   "devDependencies": {
     "ava": "0.22.0",

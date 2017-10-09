@@ -23,7 +23,7 @@ module.exports = function router (options = {}) {
     const { method } = req
     const { pathname } = parse(req.url)
 
-    if (!handlers[method].hasOwnProperty(pathname)) {
+    if (!handlers[method] || !handlers[method].hasOwnProperty(pathname)) {
       return handlers.default(req, res)
     }
 
